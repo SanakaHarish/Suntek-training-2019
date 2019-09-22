@@ -1,26 +1,32 @@
 #include<stdio.h>
-void occ(int [],int, int);
-void main()
+void check(int *arr,int np);
+void check(int *arr,int np)
 {
-    int a[20],n,s,i;
-    printf("enter size of the array");
-    scanf("%d",&n);
-    for(i=0;i<n;i++)
-        scanf("%d",&a[i]);
-    printf("enter the element to find its occurance");
-    scanf("%d",&s);
-    occ(a,s,n);
-}
-void occ(int a[20],int s,int n)
+int i,j;
+for(i=0;i<np;i++)
 {
-    int i,count=0;
-    for(i=0;i<n;i++)
-    {
-        if(a[i]==s)
-            count++;
-    }
-    if(count==0)
-        printf("-1");
-    else
-        printf("%d-%d",s,count);
+int count=0;
+for(j=i+1;j<np;j++)
+{
+if(*(a+2*j)=*(a+2*i))
+{ 
+count++;
 }
+printf("%d-%d ",*(a+2*i),count);
+}
+}
+}
+
+int main()
+{
+int i,j,arr[100],n;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+if(n==0)
+printf("-1");
+else
+check(a,n);
+}
+
+
