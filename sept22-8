@@ -1,0 +1,48 @@
+void max(int *a,int n,int max,int lar);
+int main()
+{
+int n,a[100],max;
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+scanf("%d",&a[i]);
+}
+scanf("%d",&max);
+int lar=a[0],i;
+for(i=1;i<n;i++)
+{
+if(a[i]>lar)
+lar=a[i];
+}
+void nmax(a,n,max,lar);
+}
+void max(int *a,int n,int max,int lar)
+{
+int j;
+if(max==1)
+printf("%d",lar);
+else
+{
+int count=1;
+if(a[0]==lar)
+alar=a[1];
+else
+alar=a[0];
+for(i=2;i<=max;i++)
+{
+for(j=1;j<n;j++)
+{
+if(a[i]>alar && a[i]!=lar)
+alar=a[i];
+}
+count++;
+}
+if(count==max)
+printf("%d",alar);
+else
+printf("-1");
+}
+}
+
+
+
