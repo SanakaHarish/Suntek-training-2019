@@ -24,16 +24,16 @@ printf("%d",lar);
 else
 {
 int count=1;
-if(a[0]==lar)
-alar=a[1];
+if(*(a)==lar)
+alar=*(a+2);
 else
-alar=a[0];
+alar=*(a);
 for(i=2;i<=max;i++)
 {
 for(j=1;j<n;j++)
 {
-if(a[i]>alar && a[i]!=lar)
-alar=a[i];
+if(*(a+2*j)>alar && *(a+2*j)!=lar)
+alar=*(a+2*j);
 }
 count++;
 }
